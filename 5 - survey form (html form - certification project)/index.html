@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Unicom Academy Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Name" name="name" required></label>
+        <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Email" name="email" required></label>
+        <label id="number-label" for="number">Age<input id="number" type="number" min=6 max=30 placeholder="Age"
+                name="age" required></label>
+        <label id="gender-label" for="dropdown">Gender
+            <select id="dropdown" placeholder="Gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </label>
+        <fieldset>
+            Would you recommend Unicom Academy to a friend?
+        </fieldset>
+        <label for="yes"><input id="yes" class="inline" name="will-recommend" type="radio" value="yes"> Yes</label>
+        <label for="of-course"><input id="of-course" class="inline" name="will-recommend" type="radio"
+                value="of-course"> Of course</label>
+
+        <fieldset>
+            Select courses that make you hungry to learn!
+        </fieldset>
+        <label for="python"><input id="python" class="inline" type="checkbox" value="python" name="courses"> Python
+        </label>
+        <label for="htmlcss"><input id="htmlcss" class="inline" type="checkbox" value="htmlcss" name="courses"> HTML and CSS
+        </label>
+        <label for="frontend"><input id="frontend" class="inline" type="checkbox" value="frontend" name="courses"> Front-End
+            Development
+        </label>
+        <label for="backend"><input id="backend" class="inline" type="checkbox" value="backend" name="courses"> Back-End Development
+        </label>
+        <fieldset>
+            Anything you want to suggest:
+        </fieldset>
+        <label>
+            <textarea id="suggestion" placeholder="Your suggestion is valuable to us." rows="2" name="suggestion"></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
