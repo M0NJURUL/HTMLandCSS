@@ -1,0 +1,123 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'calibri', 'sans-serif';
+  }
+  
+  img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  #navbar {
+    background-color: #be3144;
+    /* height: 50px; */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    color: #f0f0f0;
+    text-decoration: none;
+  }
+  
+  #navbar a {
+    font-size: 1em;
+    /* padding: 5px; */
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+  #navbar ul {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    font-size: 4vh
+  }
+  
+  
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40, #181719 );
+  }
+  
+  #contact-info {
+    font-size: 15px;
+    padding: 5%;
+    text-align: center;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40, #181719 );
+    color: #f0f0f0;
+  }
+  
+  
+  
+  h3 {
+    color: #be3144;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: -40px;
+  }
+  
+  h1 {
+    color: #f0f0f0;
+    font-size: 3em;
+  
+  }
+  
+  br {
+    background-color: red;
+  }
+  
+  #projects {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    background-color: #45567d;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+  }
+  
+  .project-tile {
+    background-color: #303841;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #303841;
+  color: #f0f0f0;
+  margin-top: -20px;
+  padding: 20px;
+  }
+  
+  @media (max-width:700px) {
+    #navbar {
+       justify-content: flex-start;
+    }
+  }
